@@ -40,7 +40,9 @@ export const ToDoTableBody = () => {
                         <Typography 
                             color={ (todo.status === true? 'gray' : 'black' )} 
                             sx={{ textDecoration: (todo.status === true)? 'line-through': '' }}    
-                            fontSize={{ xs:'0.9rem', sm:'1.15rem', md:'0.75rem' }}                                       
+                            fontSize={{ xs:'0.9rem', sm:'1.15rem', md:'0.75rem' }}
+                            fontWeight={400}
+                                                             
                         >
                             { todo.title }
                         </Typography>
@@ -74,6 +76,7 @@ export const ToDoTableBody = () => {
                                             :'error'
                                         }
                                         fontSize={{ xs:'0.9rem', sm:'1.15rem', md:'0.75rem' }} 
+                                        fontWeight={400}
                                     >
                                         { new Date(todo.dueDate).toLocaleString() }
                                     </Typography>

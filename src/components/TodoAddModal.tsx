@@ -114,8 +114,8 @@ type FormData = {
 									label='Nombre de la Tarea'
 									type="text"																		
 									fullWidth
-									size='small'
-									inputProps={{ maxLength: 50 }}									
+									size='small'									
+									inputProps={{ maxLength: 50, style:{fontWeight:400} }}									
 									required
 									{...register('title', {
 										required: {
@@ -133,7 +133,7 @@ type FormData = {
 
 							<Grid xs={12} sx={{ mt: 2 }} item={true} >
 								<Grid>
-									<Typography component='label' fontSize={14}>¿Posee Límite de tiempo?</Typography>
+									<Typography component='label' fontSize={14} fontWeight={400}>¿Posee Límite de tiempo?</Typography>
 									<Checkbox checked={checkedValue} size='small' onChange={ () => setCheckedValue(!checkedValue)} />
 								</Grid>	
 								
@@ -148,7 +148,7 @@ type FormData = {
 													disablePast
 													disabled={ !checkedValue }
 													value={ value }													
-													slotProps={{ textField: { size: 'small' } }}
+													slotProps={{ textField: { size: 'small', inputProps:{ style:{fontWeight:400} } } }}													
 													onChange={onChange}
 													label="Fecha Límite"																				
 													viewRenderers={{ hours: renderTimeViewClock, minutes: renderTimeViewClock }}		
