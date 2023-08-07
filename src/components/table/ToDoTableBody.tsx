@@ -40,7 +40,7 @@ export const ToDoTableBody = () => {
                         <Typography 
                             color={ (todo.status === true? 'gray' : 'black' )} 
                             sx={{ textDecoration: (todo.status === true)? 'line-through': '' }}    
-                            fontSize={{ xs:'0.9rem', sm:'1rem' }}                                       
+                            fontSize={{ xs:'0.9rem', sm:'1.15rem', md:'0.75rem' }}                                       
                         >
                             { todo.title }
                         </Typography>
@@ -60,7 +60,7 @@ export const ToDoTableBody = () => {
                                             'warning'
                                             :'error'
                                         }
-                                        sx={{ fontSize:{ xs:'1.1rem', sm:'1.3rem' } }}
+                                        sx={{ fontSize:{ xs:'1.1rem', sm:'1.2rem', md:'1rem' } }}
                                     />
 
                                     <Typography 
@@ -73,7 +73,7 @@ export const ToDoTableBody = () => {
                                             '#f57c00'
                                             :'error'
                                         }
-                                        fontSize={{ xs:'0.9rem', sm:'1rem' }} 
+                                        fontSize={{ xs:'0.9rem', sm:'1.15rem', md:'0.75rem' }} 
                                     >
                                         { new Date(todo.dueDate).toLocaleString() }
                                     </Typography>
@@ -86,7 +86,7 @@ export const ToDoTableBody = () => {
 
                             <IconButton 
                                 color='warning' 
-                                sx={{ fontSize:{ xs:'1.125rem', sm:'1.6rem' } }} 
+                                sx={{ fontSize:{ xs:'1.125rem', sm:'1.6rem', md:'1.2rem' } }} 
                                 title='Editar tarea'  
                                 onClick={ () => handleSelectTodo(todo) }
                                 disabled={ todo.status }
@@ -96,7 +96,7 @@ export const ToDoTableBody = () => {
 
                             <IconButton 
                                 color='error' 
-                                sx={{ fontSize:{ xs:'1.125rem', sm:'1.6rem' } }} 
+                                sx={{ fontSize:{ xs:'1.125rem', sm:'1.6rem', md:'1.2rem' } }} 
                                 title='Eliminar tarea'  
                                 onClick={ () => handleDeleteTodo(todo.id) }
                             >

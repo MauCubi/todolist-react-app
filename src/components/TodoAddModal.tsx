@@ -101,9 +101,9 @@ type FormData = {
 				closeTimeoutMS={ 200 }
 			>
 				<Grid container>
-					<Grid xs={112} container m={2} item={true}>
+					<Grid xs={12} container m={2} item={true}>
 
-						<Typography sx={{ fontSize:{ xs:'1.5rem', sm:'2.125rem'}, lineHeight:'1.235' }}>Agregar Tarea</Typography>
+						<Typography sx={{ fontSize:{ xs:'1.5rem', sm:'1.5rem'}, lineHeight:'1.235' }}>Agregar Tarea</Typography>
 
 						<Divider sx={{ mt: 1, width: '100%'}}/>
 
@@ -114,6 +114,7 @@ type FormData = {
 									label='Nombre de la Tarea'
 									type="text"																		
 									fullWidth
+									size='small'
 									inputProps={{ maxLength: 50 }}									
 									required
 									{...register('title', {
@@ -127,13 +128,13 @@ type FormData = {
 										}
 									}) }
 								/>
-								{errors.title && <Typography component='span' color='error'>{errors.title.message}</Typography>}
+								{errors.title && <Typography fontSize={12} component='span' color='error'>{errors.title.message}</Typography>}
 							</Grid>
 
 							<Grid xs={12} sx={{ mt: 2 }} item={true} >
 								<Grid>
-									<Typography component='label' fontSize={16}>¿Posee Límite de tiempo?</Typography>
-									<Checkbox checked={checkedValue} onChange={ () => setCheckedValue(!checkedValue)} />
+									<Typography component='label' fontSize={14}>¿Posee Límite de tiempo?</Typography>
+									<Checkbox checked={checkedValue} size='small' onChange={ () => setCheckedValue(!checkedValue)} />
 								</Grid>	
 								
 								<Grid display='flex' direction='column' container>
@@ -146,7 +147,8 @@ type FormData = {
 												<DateTimePicker 
 													disablePast
 													disabled={ !checkedValue }
-													value={ value }
+													value={ value }													
+													slotProps={{ textField: { size: 'small' } }}
 													onChange={onChange}
 													label="Fecha Límite"																				
 													viewRenderers={{ hours: renderTimeViewClock, minutes: renderTimeViewClock }}		
@@ -168,7 +170,7 @@ type FormData = {
 										}}
 										
 									/>
-									{errors.dueDate && <Typography component='span' color='error'>{errors.dueDate.message}</Typography>}
+									{errors.dueDate && <Typography fontSize={12} component='span' color='error'>{errors.dueDate.message}</Typography>}
 													
 								</Grid>
 																
@@ -177,7 +179,7 @@ type FormData = {
 							<Divider sx={{ my: 3}}/>
 
 							<Grid xs={12} item={true} >
-								<Button type='submit' variant='contained' color='primary' size='large' fullWidth>
+								<Button type='submit' variant='contained' color='primary' size='small' fullWidth>
 									{
 										activeTodo? 'Actualizar'
 										: 'Agregar'

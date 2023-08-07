@@ -26,7 +26,7 @@ export const TodoListApp = () => {
     }
 
   return (
-    <Box component='div' minHeight='100vh' display='flex' alignItems='center' flexDirection='column' mb={{ xs:'60px', sm:'100px'}}>
+    <Box component='div' minHeight='100vh' display='flex' alignItems='center' flexDirection='column' mb={{ xs:'60px', sm:'100px', md:'70px'}}>
     
         <Box 
             component='div' 
@@ -34,13 +34,13 @@ export const TodoListApp = () => {
             textAlign='center' 
             padding={{ xs:0, sm:2}} 
             flexDirection='column' 
-            width={{ xs:'100%', sm:'80%', md:'60%' }} 
-            my={{ xs:1, sm:5 }}  
+            width={{ xs:'100%', sm:'80%', md:'70%' }} 
+            my={{ xs:1, sm:4 }}  
             boxShadow={{ xs:0, sm:4 }} 
         >
 
             {/* Titulo + boton agregar / Title + add button  */}
-            <Typography fontSize={{ xs:'1.65rem', sm:'2.25rem'}} fontFamily='sans-serif' my={3}>Todo List App</Typography>   
+            <Typography fontSize={{ xs:'1.65rem', sm:'2.25rem', md:'1.7rem'}} fontFamily='sans-serif' my={{ xs:3, md:1 }}>Todo List App</Typography>   
 
             <Box component='div' display='flex' justifyContent={{ xs:'center', sm:'end' }} m={{ xs:0, sm:1 }}>
                 <Button 
@@ -48,12 +48,12 @@ export const TodoListApp = () => {
                     variant='contained' 
                     sx={{ 
                         width:{ xs:'90%', sm:'fit-content'},                         
-                        height:'2.25rem', 
+                        height:{ xs:'1.8rem', md:'1.6rem' },
                         alignSelf:{ xs:'center', sm:'right' }                        
                     }}                                         
                     onClick={ handleClickNew }
                 >
-                    <Typography fontSize={{ xs:'0.8rem', sm:'0.95rem' }}>
+                    <Typography fontSize={{ xs:'0.8rem', sm:'0.95rem', md:'0.7rem' }}>
                         Agregar Tarea
                     </Typography> 
                 </Button>

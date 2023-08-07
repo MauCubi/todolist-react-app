@@ -4,9 +4,12 @@
   }
   
   .ReactModalPortal .ReactModal__Overlay {
-    align-items: center;
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* align-items: center;
+    display: flex;
+    justify-content: center; */
     transition: opacity .2s ease-in-out;
     z-index: 999;
   }
@@ -38,6 +41,7 @@
     max-width: 500px;
     outline: none;
     padding: 10px;
+    margin-bottom: 220px;
   }
   
   .fab {

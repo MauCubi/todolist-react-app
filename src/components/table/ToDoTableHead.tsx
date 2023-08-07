@@ -21,13 +21,13 @@ export const ToDoTableHead = () => {
             <TableCell align='center' padding='checkbox'>
                 <Checkbox size='small' onChange={ handleAllChecked } />
             </TableCell>
-            <TableCell sx={{ p:{ xs:'0', sm:'16'}, fontSize:{ xs:'0.9rem', sm:'1.10rem' } }} >
+            <TableCell sx={{ p:{ xs:'0', sm:'16'}, fontSize:{ xs:'0.9rem', sm:'1.2rem', md:'0.85rem' } }} >
                 Tarea
             </TableCell>
-            <TableCell sx={{ textAlign:{xs:'center', sm:'right'},  p:{ xs:'0', sm:'16'}, fontSize:{ xs:'0.9rem', sm:'1.10rem' } }}>
+            <TableCell sx={{ textAlign:{xs:'center', sm:'right'},  p:{ xs:'0', sm:'16'}, fontSize:{ xs:'0.9rem', sm:'1.2rem', md:'0.85rem' } }}>
                 Fecha Límite
             </TableCell>
-            <TableCell align='center' sx={{ p:{ xs:'0', sm:'16'}, fontSize:{ xs:'0.9rem', sm:'1.10rem' } }}>
+            <TableCell align='center' sx={{ p:{ xs:'0', sm:'16'}, fontSize:{ xs:'0.9rem', sm:'1.2rem', md:'0.85rem' } }}>
                 Acciónes
             </TableCell>
         </TableRow>
