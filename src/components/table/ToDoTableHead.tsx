@@ -21,7 +21,7 @@ export const ToDoTableHead = () => {
             <TableCell align='center' padding='checkbox'>
                 <Checkbox size='small' onChange={ handleAllChecked } />
             </TableCell>
-            <TableCell sx={{ p:{ xs:'0', sm:'16'}}} >
+            <TableCell sx={{ p:{ xs:'0', sm:'16'}}}>
                 <Typography fontFamily='sans-serif' fontSize={{ xs:'0.9rem', sm:'1.2rem', md:'0.9rem' }} fontWeight={700}>
                     Tarea
                 </Typography>

@@ -36,7 +36,7 @@ export const ToDoTableBody = () => {
                     <TableCell component='th' scope='row' align='center' padding='checkbox'>
                         <Checkbox checked={todo.status} size='small' onChange={ () => handleChecked(index) }/>
                     </TableCell>
-                    <TableCell padding='none'>
+                    <TableCell padding='none' width='30%'>
                         <Typography 
                             color={ (todo.status === true? 'gray' : 'black' )} 
                             sx={{ textDecoration: (todo.status === true)? 'line-through': '' }}    
