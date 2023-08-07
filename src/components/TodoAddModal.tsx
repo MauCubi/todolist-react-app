@@ -5,7 +5,6 @@ import { DateTimePicker, LocalizationProvider } from '@mui/x-date-pickers';
 import { renderTimeViewClock } from '@mui/x-date-pickers/timeViewRenderers';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
 import es from 'date-fns/locale/es';
-import { DevTool } from "@hookform/devtools";
 import { useForm, Controller } from 'react-hook-form';
 import { isAfter } from 'date-fns';
 
@@ -187,7 +186,6 @@ type FormData = {
 							</Grid>
 
 						</Box>
-						<DevTool control={control}/>
 					</Grid>					
 
 				</Grid>
