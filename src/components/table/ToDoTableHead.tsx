@@ -22,17 +22,17 @@ export const ToDoTableHead = () => {
                 <Checkbox size='small' onChange={ handleAllChecked } />
             </TableCell>
             <TableCell sx={{ p:{ xs:'0', sm:'16'}}} >
-                <Typography fontSize={{ xs:'0.9rem', sm:'1.2rem', md:'0.85rem' }} fontWeight={600}>
+                <Typography fontFamily='sans-serif' fontSize={{ xs:'0.9rem', sm:'1.2rem', md:'0.9rem' }} fontWeight={700}>
                     Tarea
                 </Typography>
             </TableCell>
-            <TableCell sx={{ textAlign:{xs:'center', sm:'right'},  p:{ xs:'0', sm:'16'}, fontSize:{ xs:'0.9rem', sm:'1.2rem', md:'0.85rem' } }}>
-                <Typography fontSize={{ xs:'0.9rem', sm:'1.2rem', md:'0.85rem' }} fontWeight={600}>
+            <TableCell sx={{ textAlign:{xs:'center', sm:'right'},  p:{ xs:'0', sm:'16'} }}>
+                <Typography fontFamily='sans-serif' fontSize={{ xs:'0.9rem', sm:'1.2rem', md:'0.9rem' }} fontWeight={700}>
                     Fecha Límite
                 </Typography>
             </TableCell>
-            <TableCell align='center' sx={{ p:{ xs:'0', sm:'16'}, fontSize:{ xs:'0.9rem', sm:'1.2rem', md:'0.85rem' } }}>
-                <Typography fontSize={{ xs:'0.9rem', sm:'1.2rem', md:'0.85rem' }} fontWeight={600}>
+            <TableCell align='center' sx={{ p:{ xs:'0', sm:'16'} }}>
+                <Typography fontFamily='sans-serif' fontSize={{ xs:'0.9rem', sm:'1.2rem', md:'0.9rem' }} fontWeight={700}>
                     Acciónes
                 </Typography>
             </TableCell>
