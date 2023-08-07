@@ -34,7 +34,7 @@ export const TodoListApp = () => {
             textAlign='center' 
             padding={{ xs:0, sm:2}} 
             flexDirection='column' 
-            width={{ xs:'100%', sm:'80%', md:'70%' }} 
+            width={{ xs:'100%', sm:'80%', md:'60%' }} 
             my={{ xs:1, sm:4 }}  
             boxShadow={{ xs:0, sm:4 }} 
         >
