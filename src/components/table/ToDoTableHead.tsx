@@ -33,7 +33,7 @@ export const ToDoTableHead = () => {
             </TableCell>
             <TableCell align='center' sx={{ p:{ xs:'0', sm:'16'} }}>
                 <Typography fontFamily='sans-serif' fontSize={{ xs:'0.9rem', sm:'1.2rem', md:'0.9rem' }} fontWeight={700}>
-                    Acciónes
+                    Acciones
                 </Typography>
             </TableCell>
         </TableRow>
