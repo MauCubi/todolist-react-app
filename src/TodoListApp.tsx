@@ -40,7 +40,7 @@ export const TodoListApp = () => {
         >
 
             {/* Titulo + boton agregar / Title + add button  */}
-            <Typography fontSize={{ xs:'1.65rem', sm:'2.25rem', md:'1.7rem'}} fontFamily='sans-serif' my={{ xs:3, md:1 }}>Todo List App</Typography>   
+            <Typography fontSize={{ xs:'1.65rem', sm:'2.25rem', md:'1.7rem'}} fontFamily='sans-serif' my={{ xs:3, md:1 }}>Task Manager App</Typography>   
 
             <Box component='div' display='flex' justifyContent={{ xs:'center', sm:'end' }} m={{ xs:0, sm:1 }}>
                 <Button 
